@@ -132,19 +132,48 @@
     <section class="bg-dark text-white">
       <div class="container text-center">
         <h2 class="mb-4">Start now!</h2>
-          <div id="trucker">
-            <input class="name" type="text" placeholder="Trucker name"/>
-            <input class="price-by-km" type="number" placeholder="Price by km"/>
-            <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
-          </div>
-          <div id="shipper">
-            <input class="name" type="text" placeholder="Shipper name"/>
-            <input class="distance" type="number" placeholder="Distance in km"/>
-            <input class="volume" type="number" placeholder="Volume in m3"/>
-            <input class="option" type="checkbox" placeholder="Deductible option"/>
-          </div>
-          <div id="actors"></div>
-          <button id="compute" class="btn btn-light btn-xl sr-button">Compute</button>
+          
+          <form class="form-control-plaintext">
+            
+            <div id="trucker">
+              <div id="trucker-name">
+                <label class="col-form-label">Trucker name</label></br>
+                <input type="text"/>
+              </div>
+              </br>
+              <div id="price-by-km">
+                <input type="number" placeholder="Price by km" />
+              </div>
+              </br>
+              <div id="price-by-m3">
+                <input type="number" placeholder="Price by m3"/>
+              </div>
+              </br>
+            </div>
+
+            <div id="shipper">
+              <div id="shipper-name">
+                <input type="text" placeholder="Shipper name"/>
+              </div>
+              </br>
+              <div id="distance-in-km">
+                <input type="number" placeholder="Distance in km"/>
+              </div>
+              </br>
+              <div id="volume-in-m3">
+                <input type="number" placeholder="Volume in m3"/>
+              </div>
+              </br>
+              <div id="deductible-option">
+                <input type="checkbox" placeholder="Deductible option"/>
+              </div>
+            </div>
+
+            <div id="actors"></div>
+
+          </form>
+
+            <button id="compute" class="btn btn-light btn-xl sr-button">Compute</button>
       </div>
     </section>
 
