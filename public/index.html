@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Anaïs Diaz Perez">
 
     <title>CSS/HTML Workshop with Convargo</title>
 
@@ -100,28 +100,28 @@
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-laptop text-primary mb-3 sr-icons"></i>
               <h3 class="mb-3">Publish your offer in 1 minute</h3>
-              <p class="text-muted mb-0">Fill in your transportation needs in seconds. Our algorithm then calculates the fairest price for your shipment, you only need to publish your offer.</p>
+              <p class="text-muted mb-0 text-justify">Fill in your transportation needs in seconds. Our algorithm then calculates the fairest price for your shipment, you only need to publish your offer.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
               <h3 class="mb-3">Ready to ship</h3>
-              <p class="text-muted mb-0">Once published, your offer is visible to all the professional carriers of the platform. Therefore they can accept it and thus access all the necessary transport information.</p>
+              <p class="text-muted mb-0 text-justify">Once published, your offer is visible to all the professional carriers of the platform. Therefore they can accept it and thus access all the necessary transport information.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-road text-primary mb-3 sr-icons"></i>
               <h3 class="mb-3">Up to Date</h3>
-              <p class="text-muted mb-0">Once the race started by the carrier, you can follow the routing of your goods step by step, from the driver's departure to the delivery.</p>
+              <p class="text-muted mb-0 text-justify">Once the race started by the carrier, you can follow the routing of your goods step by step, from the driver's departure to the delivery.</p>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
               <h3 class="mb-3">Your benefits</h3>
-              <p class="text-muted mb-0">Pay the right price, without intermediaries, and take advantage of market opportunities. Our carriers are only professionals. We check their conformity, you evaluate them! From shipment to delivery, you get real-time tracking of your goods. </p>
+              <p class="text-muted mb-0 text-justify">Pay the right price, without intermediaries, and take advantage of market opportunities. Our carriers are only professionals. We check their conformity, you evaluate them! From shipment to delivery, you get real-time tracking of your goods. </p>
             </div>
           </div>
         </div>
@@ -129,51 +129,43 @@
     </section>
 
     <!-- compute -->
-    <section class="bg-dark text-white">
-      <div class="container text-center">
+    <section class="bg-dark text-white text-center">
+      <div class="container">
         <h2 class="mb-4">Start now!</h2>
-          
-          <form class="form-control-plaintext">
-            
+          <p class="text-info"> Please fill out the information bellow to compute your quotation.</p>
+      
+            <label class="col-form-label">Trucker information</label>
             <div id="trucker">
-              <div id="trucker-name">
-                <label class="col-form-label">Trucker name</label></br>
-                <input type="text"/>
-              </div>
-              </br>
-              <div id="price-by-km">
-                <input type="number" placeholder="Price by km" />
-              </div>
-              </br>
-              <div id="price-by-m3">
-                <input type="number" placeholder="Price by m3"/>
-              </div>
-              </br>
+              <input class="name" type="text" placeholder="Trucker name"/>
+              <input class="price-by-km" type="number" placeholder="Price by km"/>
+              <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
             </div>
 
+            </br>
+
+            <label class="col-form-label">Shipper information</label>
             <div id="shipper">
-              <div id="shipper-name">
-                <input type="text" placeholder="Shipper name"/>
-              </div>
+              <input class="name" type="text" placeholder="Shipper name"/>
+              <input class="distance" type="number" placeholder="Distance in km"/>
+              <input class="volume" type="number" placeholder="Volume in m3"/>
+
               </br>
-              <div id="distance-in-km">
-                <input type="number" placeholder="Distance in km"/>
-              </div>
-              </br>
-              <div id="volume-in-m3">
-                <input type="number" placeholder="Volume in m3"/>
-              </div>
-              </br>
-              <div id="deductible-option">
-                <input type="checkbox" placeholder="Deductible option"/>
-              </div>
+              
+              <input class="option" type="checkbox" placeholder="Deductible option"/>
+              <label class="col-form-label"> Deductible option</label>
             </div>
 
-            <div id="actors"></div>
-
-          </form>
+            </br>
 
             <button id="compute" class="btn btn-light btn-xl sr-button">Compute</button>
+
+          </br>
+          </br>
+
+            <div id="actors" class="container"></div>
+
+
+            
       </div>
     </section>
 
@@ -203,8 +195,8 @@
     </section>
 
     <!-- Convargo JavaScript -->
-    <script src="convargo.js"></script>
-    <script src="index.js"></script>
+    <script src="js/convargo.js"></script>
+    <script src="js/index.js"></script>
 
 
     <!-- Bootstrap core JavaScript -->
