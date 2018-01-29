@@ -135,20 +135,22 @@
           <p class="text-info"> Please fill out the information bellow to compute your quotation.</p>
       
             <label class="col-form-label">Trucker information</label>
-            <div id="trucker">
+            <div id="trucker" class="form-check">
               <input class="name" type="text" placeholder="Trucker name"/>
               <input class="price-by-km" type="number" placeholder="Price by km"/>
-              <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
+              <input class="price-by-cubic" type="number" placeholder="Price by m³"/>
             </div>
 
             </br>
+            </br>
 
             <label class="col-form-label">Shipper information</label>
-            <div id="shipper">
+            <div id="shipper" class="form-check">
               <input class="name" type="text" placeholder="Shipper name"/>
               <input class="distance" type="number" placeholder="Distance in km"/>
-              <input class="volume" type="number" placeholder="Volume in m3"/>
+              <input class="volume" type="number" placeholder="Volume in m³"/>
 
+              </br>
               </br>
               
               <input class="option" type="checkbox" placeholder="Deductible option"/>
@@ -156,13 +158,14 @@
             </div>
 
             </br>
+            </br>
 
             <button id="compute" class="btn btn-light btn-xl sr-button">Compute</button>
 
           </br>
           </br>
 
-            <div id="actors" class="container"></div>
+            <div id="actors" class="text-center"></div>
 
 
             
